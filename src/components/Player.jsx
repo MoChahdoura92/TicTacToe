@@ -7,12 +7,10 @@ export default function Player({initialName, symbol, isActive}){
     
     function handleEditClick(){
         setIsEditing(isEditing=>!isEditing);
-        console.log(isEditing)
+
     }
     function handleChange(event){
-        console.log(event)
         setPlayerName(event.target.value)
-        console.log(playerName)
     }
     let editablePlayerName = <span className="player-name">{playerName}</span>;
     let btnCaption = "Edit";
